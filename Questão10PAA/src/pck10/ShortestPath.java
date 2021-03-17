@@ -87,11 +87,11 @@ class ShortestPath {
     public static void main(String[] args) 
     { 
         /* Let us create the example graph discussed above */
-        int graph[][] = new int[][] { { 0, 7, 2, 5, 4 }, 
-                                      { 7, 0, 3, 0, 0 }, 
-                                      { 2, 3, 0, 4, 0 }, 
-                                      { 5, 0, 4, 0, 6 }, 
-                                      { 4, 0, 0, 6, 0 }}; 
+        int graph[][] = new int[][] { { 0, 0, 2, 5, 0 }, 
+                                      { 7, 0, 0, 0, 0 }, 
+                                      { 0, 3, 0, 4, 0 }, 
+                                      { 0, 0, 0, 0, 6 }, 
+                                      { 4, 0, 0, 0, 0 }}; 
                                                             
         ShortestPath t = new ShortestPath(); 
         t.dijkstra(graph, 0); 
